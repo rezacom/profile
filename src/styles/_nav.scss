@@ -1,0 +1,31 @@
+@import './variables';
+
+
+.navbar {
+    padding: 0;
+    border-right: solid 1px #ccc;
+    align-items: start;
+    height: 90vh;
+    
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+
+        a {
+            padding: 17px;
+            color: $darkColor;
+            display: block;
+            transition: all .3s;
+
+            &:hover {
+                background: $lightColor;
+            }
+
+            svg {
+                font-size: 45px;
+            }
+        }
+    }
+}

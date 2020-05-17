@@ -1,0 +1,9 @@
+@import './variables';
+
+.MuiTabs-flexContainer {
+    justify-content: center !important;
+}
+
+.MuiTab-textColorPrimary:focus {
+    outline: none;
+}

@@ -1,0 +1,54 @@
+@import "./nav";
+@import "./variables";
+@import "./userInfo";
+@import "./userProject";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: $whiteColor2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.profile {
+  background: $whiteColor;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+img {
+  max-width: 100%;
+}
+
+.profile-main {
+  margin-top: 20px;
+}
