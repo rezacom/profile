@@ -19,5 +19,7 @@ export default function NavBar() {
                 <li className="navbar__item"><Link to="/comment"><ChatBubbleOutlineIcon /></Link></li>
             </ul>
         </div>
+
+        
     )
 }
