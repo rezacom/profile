@@ -2,6 +2,9 @@
 @import "./variables";
 @import "./userInfo";
 @import "./userProject";
+@import "./comment";
+@import "./awards";
+@import "./resume";
 
 body {
   margin: 0;
@@ -23,6 +26,7 @@ body {
   height: 90vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  box-shadow: $boxShadowLight;
 }
 
 /* width */
@@ -50,5 +54,13 @@ img {
 }
 
 .profile-main {
+  margin-top: 20px;
+}
+
+.resume-page-title {
+  font-size: 35px;
+  border-bottom: solid 1px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
   margin-top: 20px;
 }

@@ -1,14 +1,15 @@
 import React from 'react'
 
-export default function ResumeItem() {
+export default function ResumeItem(props) {
+    console.log(props)
     return (
         <div className="resume-item">
 
-            <h3 className="resume-item__title">malek company</h3>
-            <h5 className="resume-item__role">front end developer</h5>
-            <span className="resume-item__date">2015/2/3 - 2018/1/2</span>
+    <h3 className="resume-item__title">{props.title}</h3>
+    <h5 className="resume-item__role">{props.job}</h5>
+    <span className="resume-item__date">{props.dateIn} - {props.dateTo}</span>
             <p className="resume-item__disc">
-                Let’s design your Joomla website with TemPlaza! Utility, easy-customizability, friendly-to-user are our first priority.
+                {props.disc}
             </p>
 
         </div>

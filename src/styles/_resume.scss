@@ -1,0 +1,18 @@
+@import './variables';
+
+.user-resume {
+
+    &__work-experience{
+        padding-left: 20px;
+        margin-left: 30px;  
+        border-left: solid 2px $primartColor;    
+        margin-bottom: 50px; 
+    }
+
+    &__education {
+        padding-left: 20px;
+        margin-left: 30px;  
+        border-left: solid 2px $primartColor2;    
+        margin-bottom: 50px; 
+    }
+}

@@ -1,18 +1,30 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import NavBar from './nav/navBar';
 import UserInfo from './info/userInfo';
 import UserProject from './project/userProject';
 import UserResume from './resume/userResume';
 import UserComments from './comments/userComments';
 import UserAwards from './awards/userAwards';
+import data from '../data.json';
+
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
-    Link
   } from "react-router-dom";
 
 export default function Main() {
+
+    const [loading, setLoading] = useState(false)
+    const userData = data;
+    // console.log(userData);
+
+    // useEffect(() => {
+    //     fetch('../data.json')
+    //         .then(res => res.json())
+    //         .then(res => console.log(res))
+    //         .catch(err => console.log(err))
+    // });
+
     return (
         <>
         <Router>
@@ -24,11 +36,21 @@ export default function Main() {
                             <NavBar />
                         </div>
                         <div className="col-11" style={{paddingTop: 20, paddingRight: 30}}>
-                            <Route path="/" exact component={UserInfo}/>
-                            <Route path="/project" component={UserProject} />
-                            <Route path="/resume" component={UserResume}/>
-                            <Route path="/comment" component={UserComments}/>
-                            <Route path="/awards" component={UserAwards}/>
+                            <Route path="/" exact >
+                                <UserInfo data={userData.info} socials={userData.socilas} loading={loading}/>
+                            </Route>
+                            <Route path="/project" >
+                                <UserProject data={userData.projects} loading={loading}/>
+                            </Route>
+                            <Route path="/resume"  >
+                                <UserResume data={userData.resume} loading={loading}/>
+                            </Route>
+                            <Route path="/comment">
+                                <UserComments />
+                            </Route>
+                            <Route path="/awards">
+                                <UserAwards data={userData.awards} loading={loading}/>
+                            </Route>
                         </div>
                     </div>
 

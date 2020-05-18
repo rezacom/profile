@@ -7,10 +7,12 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProjectItem from './projectItem';
-import projectImage from '../../images/project1.jpg';
+import data from '../../data.json';
+import loader from '../../images/load.svg';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+
 
   return (
     <div
@@ -50,6 +52,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ScrollableTabsButtonAuto() {
+  const projectData = data.projects;
+
+  // console.log(projectData)
+
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -59,7 +65,9 @@ export default function ScrollableTabsButtonAuto() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="#fff" style={{boxShadow: 'none'}}>
+                  <h1 className="resume-page-title">projects</h1>
+
+      <AppBar position="static" color="#fff" style={{ boxShadow: 'none' }}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -69,37 +77,43 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-         
+          <Tab label="All" {...a11yProps(0)} />
+          <Tab label="Web" {...a11yProps(1)} />
+          <Tab label="Graphic" {...a11yProps(2)} />
+
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
         <div className="row">
-            <ProjectItem img={projectImage} title="first project"/>
-            <ProjectItem img={projectImage} title="first project"/>
-            <ProjectItem img={projectImage} title="first project"/>
-            <ProjectItem img={projectImage} title="first project"/>
-            
+          {projectData ? projectData.project_web.map((item, index) => (
+            <ProjectItem img={item.image} title={item.title} key={index + 1}/>
+
+          )) : <div className="cart-load"><img src={loader} /></div>}
+          {projectData ? projectData.project_graphic.map((item, index) => (
+            <ProjectItem img={item.image} title={item.title} key={index + 1}/>
+
+          )) : <div className="cart-load"><img src={loader} /></div>}
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <div className="row">
-        <ProjectItem img={projectImage} title="first project"/>
-        <ProjectItem img={projectImage} title="first project"/>
-            
+          {projectData ? projectData.project_web.map((item, index) => (
+            <ProjectItem img={item.image} title={item.title} key={index + 1}/>
+
+          )) : <div className="cart-load"><img src={loader} /></div>}
+
         </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <div className="row">
-        <ProjectItem img={projectImage} title="first project"/>
-        <ProjectItem img={projectImage} title="first project"/>
-        <ProjectItem img={projectImage} title="first project"/>
-            
+          {projectData ? projectData.project_graphic.map((item, index) => (
+            <ProjectItem img={item.image} title={item.title} key={index + 1}/>
+
+          )) : <div className="cart-load"><img src={loader} /></div>}
+
         </div>
       </TabPanel>
-    
+
     </div>
   );
 }

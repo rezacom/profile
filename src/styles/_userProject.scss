@@ -1,9 +1,46 @@
-@import './variables';
+@import "./variables";
 
 .MuiTabs-flexContainer {
-    justify-content: center !important;
+  justify-content: center !important;
 }
 
 .MuiTab-textColorPrimary:focus {
-    outline: none;
+  outline: none;
 }
+
+.project-item {
+  margin-bottom: 30px;
+  transition: 0.3s;
+
+  &__box {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__detail {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transition: 0.3s;
+    transform: scale(0);
+
+    &-title {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0px;
+      text-align: center;
+      color: $whiteColor;
+    }
+  }
+
+
+}
+
+.project-item:hover .project-item__detail {
+    top: 0;
+    transform: scale(1);
+
+  }

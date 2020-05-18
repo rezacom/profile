@@ -1,0 +1,73 @@
+@import "./variables";
+
+.comment-item {
+  display: flex;
+
+  &__avatar {
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  &__data {
+    background: $whiteColor2;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+
+    &-title {
+      font-size: 20px;
+      padding-right: 15px;
+    }
+
+    &-text {
+      margin-top: 20px;
+    }
+
+    &-delete {
+      display: inline-block;
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: .2s;
+      color: $darkColor;
+      float: right;
+
+
+      &:hover {
+        background: #ccc;
+      }
+    }
+
+
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-width: 14px 0 0px 14px;
+      border-color: $whiteColor2 $whiteColor2 $whiteColor2 transparent;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      left: -13px;
+      top: 0;
+    }
+  }
+}
+
+.comment-form {
+  display: block;
+
+  &__item {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+}

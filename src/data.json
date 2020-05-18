@@ -1,0 +1,131 @@
+{
+    "info": {
+        "name": "Reza Shojaei",
+        "job": "Front End Developer",
+        "email": "reza1880z2@gmail.com",
+        "phone": "09212430949",
+        "url": "rezawd.ir",
+        "location": "6 Place Saint-Germain des Prés, 75006 Paris, France",
+        "about": "TemPlaza, the website built and improved by Sunland., Jsc. We supply templates and other qualified applications on Joomla and WordPress. Our head quarter is located in Hanoi, the capital of Vietnam and which was recently voted as one of the most peaceful destinations of Asia for residence and business as well. Our mission is to supply templates and applications. The company is formed of most skilled staff, with a variety of experience in information technology and communication section in general, and working with Joomla and WordPress in particular. With the strong desire to bring improvement to customer business, we are thriving to supply the best products, services, and support to our customers."
+    },
+    "socilas": {
+        "facebook": "rezacom",
+        "telegram": "rezashojaei1880",
+        "google-plud": "rezacom",
+        "github": "rezacom",
+        "instagram": "reza1880"
+    },
+    "projects": {
+        "project_web": [
+            {
+                "image": "https://i.picsum.photos/id/694/300/300.jpg",
+                "title": "project 1",
+                "url": "https://google.com",
+                "category": "web"
+            },
+            {
+                "image": "https://i.picsum.photos/id/244/300/300.jpg",
+                "title": "project 2",
+                "url": "https://google.com",
+                "category": "web"
+            },
+            {
+                "image": "https://i.picsum.photos/id/645/300/300.jpg",
+                "title": "project 3",
+                "url": "https://google.com",
+                "category": "web"
+            },
+            {
+                "image": "https://i.picsum.photos/id/675/300/300.jpg",
+                "title": "project 4",
+                "url": "https://google.com",
+                "category": "web"
+            }
+        ],
+        "project_graphic": [
+            {
+                "image": "https://i.picsum.photos/id/45/300/300.jpg",
+                "title": "project 5",
+                "url": "https://google.com",
+                "category": "graphic"
+            },
+            {
+                "image": "https://i.picsum.photos/id/452/300/300.jpg",
+                "title": "project 6",
+                "url": "https://google.com",
+                "category": "graphic"
+            },
+            {
+                "image": "https://i.picsum.photos/id/784/300/300.jpg",
+                "title": "project 7",
+                "url": "https://google.com",
+                "category": "graphic"
+            },
+            {
+                "image": "https://i.picsum.photos/id/781/300/300.jpg",
+                "title": "project 8",
+                "url": "https://google.com",
+                "category": "graphic"
+            }
+        ]
+    },
+    "resume": {
+        "work": [
+            {
+                "title": "malek company",
+                "job_title": "Front End Developer",
+                "date_in": "2015-5-4",
+                "date_to": "2016-4-8",
+                "disc": "Let’s design your Joomla website with TemPlaza! Utility, easy-customizability, friendly-to-user are our first priority."
+            },
+            {
+                "title": "Mapsa Company",
+                "job_title": "Front End Developer",
+                "date_in": "2015-5-4",
+                "date_to": "2016-4-8",
+                "disc": "Let’s design your Joomla website with TemPlaza! Utility, easy-customizability, friendly-to-user are our first priority."
+            },
+            {
+                "title": "Malek Company",
+                "job_title": "Front End Developer",
+                "date_in": "2015-5-4",
+                "date_to": "2016-4-8",
+                "disc": "Let’s design your Joomla website with TemPlaza! Utility, easy-customizability, friendly-to-user are our first priority."
+            }
+        ],
+        "education": [
+            {
+                "title": "Tahery Vahid",
+                "job_title": "Computer",
+                "date_in": "2015-5-4",
+                "date_to": "2016-4-8",
+                "disc": "Let’s design your Joomla website with TemPlaza! Utility, easy-customizability, friendly-to-user are our first priority."
+            },
+            {
+                "title": "Parand",
+                "job_title": "Softwarw",
+                "date_in": "2016-5-4",
+                "date_to": "2017-4-8",
+                "disc": "Let’s design your Joomla website with TemPlaza! Utility, easy-customizability, friendly-to-user are our first priority."
+            } 
+        ]
+    },
+    "awards": [
+        {
+            "title": "Awwwards site of the day 2015",
+            "disc": "All in all, TemPlaza brings the opportunity to employ all of our applications to archive the dream without any fee. Become the leader in your business and build websites with us. So do not waste your time, simplify work and join us as Member now!"
+        },
+        {
+            "title": "Malek website",
+            "disc": "All in all, TemPlaza brings the opportunity to employ all of our applications to archive the dream without any fee. Become the leader in your business and build websites with us. So do not waste your time, simplify work and join us as Member now!"
+        },
+        {
+            "title": "Awwwards site of the day 2015",
+            "disc": "All in all, TemPlaza brings the opportunity to employ all of our applications to archive the dream without any fee. Become the leader in your business and build websites with us. So do not waste your time, simplify work and join us as Member now!"
+        },
+        {
+            "title": "Accounting project",
+            "disc": "All in all, TemPlaza brings the opportunity to employ all of our applications to archive the dream without any fee. Become the leader in your business and build websites with us. So do not waste your time, simplify work and join us as Member now!"
+        }
+    ]
+}
